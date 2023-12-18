@@ -1,0 +1,18 @@
+version: '3.8'
+services: 
+  bdd:
+    image: postgres:14.1-alpine
+    container_name: bdd
+    restart: always
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pwd
+      - POSTGRES_DB=db
+    ports:
+      - '9254:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db: 
+    driver: local
