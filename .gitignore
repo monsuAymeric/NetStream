@@ -1,1 +1,2 @@
-*.yml
+db-docker/
+db-docker/docker-compose.yml
