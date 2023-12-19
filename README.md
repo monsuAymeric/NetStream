@@ -7,7 +7,7 @@ Brief Base de Données Merise
 ```
 printf("Bonjour, monde!");
 ```
-1. Titres et dates de sorties des films du plus récent au plus ancien :
+<li>1. Titres et dates de sorties des films du plus récent au plus ancien<li>
 ```  
 SELECT titre, date_sortie FROM public.films ORDER BY date_sortie ASC;
 ```
