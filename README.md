@@ -37,7 +37,7 @@ WHERE r.nom = 'Protagoniste' AND f.titre = 'Titre du film';
 SELECT titre from films f
 INNER JOIN jouer j ON f.id_film = j.id_film
 INNER JOIN acteurs a ON j.id_acteur = a.id_acteur
-WHERE a.nom = "nom de l'acteur";
+WHERE a.nom = 'nom de l'acteur';
 ```
 
 5. Ajouter un film.
