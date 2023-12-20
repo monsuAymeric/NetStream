@@ -24,17 +24,20 @@ WHERE AGE(CURRENT_DATE, date_naissance) > '30 years' ORDER BY nom;
 3. Liste des acteurs/actrices principaux (Protagoniste) pour un film donné.
 
 ```  
-SELECT * FROM acteurs a 
-INNER JOIN posseder p ON a.id_acteur = p.id_acteur 
-WHERE id_role = 5 AND id_film = film_choisi;
+SELECT f.titre, r.nom, a.nom, a.prenom, a.date_naissance from acteurs a
+INNER JOIN posseder p ON a.id_acteur = p.id_acteur
+INNER JOIN films f ON p.id_film = f.id_film
+INNER JOIN roles r ON p.id_role = r.id_role
+WHERE r.nom = 'Protagoniste' AND f.titre = 'Titre du film';
 ```
 
 4. Liste des films pour un acteur/actrice donné.
 
 ```  
-SELECT id_film 
-FROM jouer 
-WHERE id_acteur = acteur/actrice_choisi(e);
+SELECT titre from films f
+INNER JOIN jouer j ON f.id_film = j.id_film
+INNER JOIN acteurs a ON j.id_acteur = a.id_acteur
+WHERE a.nom = "nom de l'acteur";
 ```
 
 5. Ajouter un film.
