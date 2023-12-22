@@ -1,6 +1,34 @@
-# NetStream
-Brief Base de Données Merise
+## NetStream
 
+--     ####   #####      ##              ##   ##  #####    #######           ######    ####             ##   ##  #######  ######    ####     #####   #######
+--    ##  ##   ## ##    ####             ##   ##   ## ##    ##   #            ##  ##  ##  ##            ### ###   ##   #   ##  ##    ##     ##   ##   ##   #
+--   ##        ##  ##  ##  ##            ##   ##   ##  ##   ## #              ##  ##      ##            #######   ## #     ##  ##    ##     #         ## #
+--   ##        ##  ##  ##  ##            #######   ##  ##   ####              #####     ###             #######   ####     #####     ##      #####    ####
+--   ##        ##  ##  ######            ##   ##   ##  ##   ## #              ##          ##            ## # ##   ## #     ## ##     ##          ##   ## #
+--    ##  ##   ## ##   ##  ##            ##   ##   ## ##    ##                ##      ##  ##            ##   ##   ##   #   ##  ##    ##     ##   ##   ##   #
+--     ####   #####    ##  ##            ##   ##  #####    ####              ####      ####             ##   ##  #######  #### ##   ####     #####   #######
+
+
+# Brief Base de Données Merise
+
+Il nous a été demander de créer une base de données sur le thème d'un site de streaming (NetStream) qui regroupera :
+<li>Les films</li>
+<li>Les acteurs qui ont joué dans ces films ainsi que leur rôles</li>
+<li>Les réalisateurs qui ont réalisé ces films</li>
+
+Base de données effectuée en environnement Docker, avec la méthode Merise et PostGreSQL en tant que SGBD avec le logiciel PgAdmin
+
+# Contenus du Brief
+
+Dans ce repo Github, il y auras :
+<li>L'environnement Docker (db-docker/docker-compose.yml)</li>
+<li>Le fichier de conception de la base de Données créé avec le logiciel Looping(Merise/NetStream_MCD_MLD.loo)</li>
+<li>Le Dictionnaire de Données (DD_Brief_Merise.pdf)</li>
+<li>Le MCD (Modèle Conceptuel de Données (Merise/MCD.png))</li>
+<li>Le MLD (Modèle Logique de Données (Merise/MLD.png + Merise/MLD_graph.png))</li>
+<li>Le MPD (Modèle Physique de Données(Merise/MPD.png))</li>
+<li>Le Script de génération de la DB (netstream_backup.sql)</li>
+<li>Le README.md avec une description du projet et les requêtes SQL demandées (C'est ce que tu lis :D)
 
 ## Requêtes SQL
 
