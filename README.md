@@ -43,7 +43,7 @@ Dans ce dépôt Github, il y auras :
 
 1. Titres et dates de sorties des films du plus récent au plus ancien.
 
-```  
+``` sql 
 SELECT titre, date_sortie 
 FROM films 
 ORDER BY date_sortie ASC;
@@ -51,7 +51,7 @@ ORDER BY date_sortie ASC;
 
 2. Noms/Prénoms/Âge des acteurs/actrices de plus de 30 ans dans l'ordre alphabétique.
 
-```  
+``` sql
 SELECT nom, prenom, date_naissance, AGE(CURRENT_DATE, date_naissance) 
 AS age 
 FROM acteurs 
@@ -60,7 +60,7 @@ WHERE AGE(CURRENT_DATE, date_naissance) > '30 years' ORDER BY nom;
 
 3. Liste des acteurs/actrices principaux (Protagoniste) pour un film donné.
 
-```  
+``` sql
 SELECT f.titre, r.nom, a.nom, a.prenom, a.date_naissance from acteurs a
 INNER JOIN posseder p ON a.id_acteur = p.id_acteur
 INNER JOIN films f ON p.id_film = f.id_film
@@ -70,7 +70,7 @@ WHERE r.nom = 'Protagoniste' AND f.titre = 'Titre du film';
 
 4. Liste des films pour un acteur/actrice donné.
 
-```  
+``` sql
 SELECT titre from films f
 INNER JOIN jouer j ON f.id_film = j.id_film
 INNER JOIN acteurs a ON j.id_acteur = a.id_acteur
@@ -79,21 +79,21 @@ WHERE a.nom = 'nom de l'acteur';
 
 5. Ajouter un film.
 
-```  
+``` sql  
 INSERT INTO films (id_film, titre, duree, date_sortie, id_realisateur)
 VALUES (incrémentation, 'titre choisi', 'h:m:s', 'yyyy-mm-dd', id_realisateur);
 ```
 
 6. Ajouter un acteur/actrice.
 
-```  
+``` sql 
 INSERT INTO acteurs (id_acteur, nom, prenom, date_naissance)
 VALUES (incrementation, 'son nom', 'son prenom', 'yyyy-mm-dd');
 ```
 
 7. Modifier un film.
 
-```  
+``` sql 
 UPDATE film
 SET titre = nouveau_titre, duree = nouvelle_duree, date_sortie = nouvelle_date, id_realisateur = nouveau_realisateur
 WHERE id_film = 'film choisi';
@@ -101,12 +101,12 @@ WHERE id_film = 'film choisi';
 
 8. Supprimer un acteur/actrice.
 
-```  
+``` sql  
 DELETE FROM acteurs WHERE id_acteur = acteur_choisi;
 ```
 
 9. Afficher les 3 derniers acteurs/actrices ajouté(e)s.
 
-```  
+``` sql  
 SELECT * FROM acteurs ORDER BY id_acteur DESC LIMIT 3;
 ```
