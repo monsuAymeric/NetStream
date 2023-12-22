@@ -37,7 +37,7 @@ Dans ce dépôt Github, il y auras :
 <li>Le Script de génération de la DB (netstream_backup.sql)</li>
 <li>Le README.md avec une description du projet et les requêtes SQL demandées (C'est ce que tu lis :D)
 <li>Aperçu de la grille d'évaluation (grille_evaluation_merise.pdf)</li>
-</li> ---> <a href="https://docs.google.com/spreadsheets/d/147PGlYBUetaSLrmVvML7RWyfWAi7CRKdZ2ER823TZco">Grille d'évaluation <---</li>
+</li> ---> <a href="https://docs.google.com/spreadsheets/d/147PGlYBUetaSLrmVvML7RWyfWAi7CRKdZ2ER823TZco">Grille d'évaluation</a> <---</li>
 
 ## Requêtes SQL
 
