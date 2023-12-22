@@ -12,14 +12,16 @@
 
 # Brief Base de Données Merise
 
-Il nous a été demandé de créer une base de données sur le thème d'un site de streaming (NetStream) qui regroupera :
+Il nous a été demandé de créer une base de données sur le thème d'un site de streaming qui regroupera :
 <ul>
   <li>Les films</li>
   <li>Les acteurs qui ont joués dans ces films ainsi que leur rôles</li>
   <li>Les réalisateurs qui ont réalisé ces films</li>
   <li>Les utilisateurs qui utiliseront ce site</li>
+</ul>
   <br>
   Ainsi que quelques manipulations avancées :
+<ul>
   <li>Lister grâce à une procédure (FONCTION) stockée, les films d'un réalisateur donné en paramètre</li>
   <li>Garder grâce à un trigger une trace de toutes modifications apportées à la table des utilisateurs</li>
   <li>Une table d'archive qui conservera la date de la MAJ, l'identifiant de l'utilisateur concerné, l'ancienne et nouvelle valeur</li>
