@@ -1,0 +1,29 @@
+version: '3.8'
+services: 
+  bdd:
+    image: postgres:14.1-alpine
+    container_name: NetStream
+    restart: always
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pwd
+      - POSTGRES_DB=db
+    ports:
+      - '9254:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: password
+      PGADMIN_LISTEN_PORT: 8001
+    ports:
+      - "8001:8001"
+    depends_on:
+      - bdd
+
+volumes:
+  db: 
+    driver: local
