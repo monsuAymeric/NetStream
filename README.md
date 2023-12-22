@@ -22,7 +22,7 @@ Ainsi que quelques manipulations avancées :
 <li>Lister grâce à une procédure (FONCTION) stockée, les films d'un réalisateur donné en paramètre</li>
 <li>Garder grâce à un trigger une trace de toutes modifications apportées à la table des utilisateurs</li>
 <li>Une table d'archive qui conservera la date de la MAJ, l'identifiant de l'utilisateur concerné, l'ancienne et nouvelle valeur</li>
-
+<br>
 Base de données effectuée en environnement Docker, avec la méthode Merise et PostGreSQL en tant que SGBD avec le logiciel PgAdmin
 
 # Contenus du Dépôt
