@@ -16,12 +16,18 @@ Il nous a été demander de créer une base de données sur le thème d'un site 
 <li>Les films</li>
 <li>Les acteurs qui ont joué dans ces films ainsi que leur rôles</li>
 <li>Les réalisateurs qui ont réalisé ces films</li>
+<li>Les utilisateurs qui utiliseront ce site</li>
 <br>
+Ainsi que quelques manipulations avancées :
+<li>Lister grâce à une procédure (FONCTION) stockée, les films d'un réalisateur donné en paramètre</li>
+<li>Garder grâce à un trigger une trace de toutes modifications apportées à la table des utilisateurs</li>
+<li>Une table d'archive qui conservera la date de la MAJ, l'identifiant de l'utilisateur concerné, l'ancienne et nouvelle valeur</li>
+
 Base de données effectuée en environnement Docker, avec la méthode Merise et PostGreSQL en tant que SGBD avec le logiciel PgAdmin
 
-# Contenus du Brief
+# Contenus du Dépôt
 
-Dans ce repo Github, il y auras :
+Dans ce dépôt Github, il y auras :
 <li>L'environnement Docker (db-docker/docker-compose.yml)</li>
 <li>Le fichier de conception de la base de Données créé avec le logiciel Looping(Merise/NetStream_MCD_MLD.loo)</li>
 <li>Le Dictionnaire de Données (DD_Brief_Merise.pdf)</li>
