@@ -20,7 +20,7 @@ Il nous a été demandé de créer une base de données sur le thème d'un site 
   <li>Les utilisateurs qui utiliseront ce site</li>
 </ul>
   <br>
-  Ainsi que quelques manipulations avancées : <br>
+Ainsi que quelques manipulations avancées :
 <ul>
   <li>Lister grâce à une procédure (FONCTION) stockée, les films d'un réalisateur donné en paramètre</li>
   <li>Garder grâce à un trigger une trace de toutes modifications apportées à la table des utilisateurs</li>
